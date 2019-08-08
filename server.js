@@ -8,7 +8,7 @@ const PORT = process.env.PORT || '3300';
 app.use(bodyParser.json());
 
 app.get('/getmyName', (req, res, next) => {
-  res.status(200).json({ route: req.query.name ? req.query.name : 'No Name Specified' });
+  res.status(200).json({ route: req.query.name ? req.query.name : 'No Name Specified in the QueryParam' });
 });
 
 app.post('/getmyName1', (req, res, next) => {
